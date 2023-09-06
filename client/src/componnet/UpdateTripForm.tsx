@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { UserContext } from "../contex.tsx/tripes";
+import { UserContext } from "../contex.tsx/DataTrip";
 
 type data = {
   id: number;

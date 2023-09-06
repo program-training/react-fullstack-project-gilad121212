@@ -1,9 +1,9 @@
 import React, { useContext, createContext, useState, useEffect } from "react";
-import { UserContextToken } from "./token";
-import { UserContext } from "./tripes";
-import { UserContext1 } from "./disepirdDiv";
-import Appdete from "../componnet/appdate";
-import Info from "../componnet/info";
+import { UserContextToken } from "../contex.tsx/token";
+import { UserContext } from "../contex.tsx/DataTrip";
+import { UserContext1 } from "../contex.tsx/disepirdDiv";
+import Appdete from "./UpdateTripForm";
+import Info from "./TripDetail";
 type tripe1 = {
   id: number;
   name: string;
@@ -21,7 +21,7 @@ export default function Card(data: tripe1) {
   const [flag, setFlag] = useState<boolean>(false);
   const context = useContext(UserContext);
   if (!context) return null;
-  const { tripe , rendor ,setRendor } = context;
+  const { tripe, rendor, setRendor } = context;
   const { setTripe } = context;
   const context1 = useContext(UserContext1);
   if (!context1) return null;
@@ -66,7 +66,7 @@ export default function Card(data: tripe1) {
                   .catch((error) => console.log("error", error));
                 setTripe(tripe);
                 console.log({ token });
-                setRendor((rendor)=> rendor+1)
+                setRendor((rendor) => rendor + 1);
               }}
             >
               delete
@@ -103,7 +103,7 @@ export default function Card(data: tripe1) {
               setFlag(false), setF(true);
             }}
           >
-            trips 
+            trips
           </button>{" "}
         </div>
       )}

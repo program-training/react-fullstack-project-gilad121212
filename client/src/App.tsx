@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Token } from './contex.tsx/token'
 import Home from './componnet/HomePage'
-import Trips from './contex.tsx/Trips'
+import Trips from './componnet/Trips'
 import './App.css'
 
 function App() {
