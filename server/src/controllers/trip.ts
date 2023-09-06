@@ -43,6 +43,8 @@ export const updateTripController = (req: Request, res: Response) => {
   const updatedTripData: Trip = req.body; // Assumes request body contains updated trip data
   updatedTripData.id = tripId;
 
+
+  console.log(req.body)
   const updatedTrip = updateTrip(updatedTripData);
 
   if (!updatedTrip) {
