@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
 }
 
 a {
@@ -46,6 +47,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin: 20px;
 }
 button:hover {
   border-color: #646cff;
@@ -66,4 +68,45 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+img{
+  margin-top: 20px;
+  width: 300px;
+  border-radius: 20px;
+}
+#cardDiv{
+  border: 2px black solid;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+ margin-bottom: 20px;
+ margin-left: 20px;
+}
+#mainDiv{
+  display: flex;
+  flex-wrap: wrap;
+}
+#infoDiv{
+  border: black 2px solid;
+  width: 1000px;
+  height: 670px;
+  border-radius: 20px;
+  background-color: rgb(233, 246, 246);
+}
+input{
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+#imgeInfo{
+  width: 600px;
+}
+#appDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  background-color: rgb(192, 228, 228);
+  width: 1000px;
 }
